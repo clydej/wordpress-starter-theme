@@ -1,0 +1,33 @@
+/*
+Theme Name: The Client Name
+Author: Clyde Sanchez
+Description: WordPress theme for The Client Name.
+Version: 1.0
+*/
+
+// Import Compass CSS styles
+@import "compass";
+@import "compass/reset";
+@import "compass/css3";
+
+// Import Susy grid framework
+// @import "susy";
+// @import "_partials/susy-settings"; // Load my Susy project settings
+
+// Import partials
+@import "_partials/variables";
+@import "_partials/base";
+@import "_partials/header";
+@import "_partials/main";
+// @import "_partials/sidebar";
+@import "_partials/footer";
+@import "_partials/typography";
+@import "_partials/buttons";
+// @import "_/partials/forms";
+// @import "_partials/plugins";
+// @import "_partials/animations";
+@import "_partials/responsive";
+
+// Convert images into CSS sprites
+// @import "spritable/*.png";
+// @include all-spritable-sprites;
