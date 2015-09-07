@@ -1,4 +1,4 @@
-# wordpress-starter-theme
+# My WordPress Starter Theme
 A WordPress starter theme to get up and running fast. Dependent on Compass, Sass and Susy.
 
 This is just a basic theme with the basic theme templates required to build a theme. This theme assumes that you will be adding in your own PHP/HTML for fleshing out the templates (ex: header.php, etc..,).
