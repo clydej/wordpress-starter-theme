@@ -24,3 +24,52 @@
  * @subpackage The_Client_Name
  * @since The Client Name 1.0
  */
+
+
+
+ // MENU SUPPORT --
+
+ // Main Nav
+ function register_my_menu() {
+   register_nav_menu('main-nav',__( 'Main Nav' ));
+ }
+ add_action( 'init', 'register_my_menu' );
+
+ // -- END MENU SUPPORT
+
+
+
+ // WIDGETS SUPPORT --
+
+// Name of Widget
+/* register_sidebar( array(
+  'name' => 'Name of Widget',
+  'id' => 'name-of-widget',
+  'description' => 'Where widget is located',
+  'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+  'after_widget' => '</aside>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+) ); */
+
+// -- END WIDGETS SUPPORT
+
+
+
+// ENQUEUE SCRIPTS AND STYLES --
+
+// Enqueue all CSS and JS files
+function load_my_scripts() {
+    // Google Fonts CSS
+    wp_register_style('my-google-fonts', 'https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+    // Name of JS File
+    // wp_register_script('name-of-js-file', get_template_directory_uri().'/js/name-of-js-file.min.js', array('jquery'), '', TRUE);
+
+    wp_enqueue_style( 'my-google-fonts');
+    // wp_enqueue_script('name-of-js-file');
+}
+
+add_action( 'wp_enqueue_scripts', 'load_my_scripts' );
+
+// -- END ENQUEUE SCRIPTS AND STYLES

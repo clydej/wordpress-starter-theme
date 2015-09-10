@@ -11,7 +11,45 @@
 ?>
 	<!-- ADD FOOTER CONTENT BELOW -->
 
+	<div class="footer">
 
+		<div class="inner">
+
+			<div class="top">
+
+				<div class="column-1">
+
+				</div>
+
+				<div class="column-2">
+
+				</div>
+
+				<div class="column-3">
+
+				</div>
+
+				<div class="column-4">
+
+				</div>
+
+			</div>
+
+			<div class="bottom">
+
+				<div class="column-1">
+
+				</div>
+
+				<div class="column-2">
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
 
 	<?php wp_footer(); ?>
 

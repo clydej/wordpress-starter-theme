@@ -24,3 +24,20 @@
 <body <?php body_class(); ?>>
 
 	<!-- ADD HEADER CONTENT BELOW -->
+
+	<div class="header">
+
+		<div class="inner">
+
+			<div class="logo">
+
+				<!--	BE SURE TO ADD HEIGHT AND WIDTH TO IMG BELOW -->
+				<a href="<?php echo home_url(); ?>/"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" /></a>
+
+			</div>
+
+			<?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
+
+		</div>
+
+	</div>
